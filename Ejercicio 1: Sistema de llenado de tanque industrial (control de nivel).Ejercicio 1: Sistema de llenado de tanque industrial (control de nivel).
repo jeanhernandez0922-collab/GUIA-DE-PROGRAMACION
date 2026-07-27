@@ -1,0 +1,19 @@
+Algoritmo Sistema_de_llenado_de_tanque_industrial
+	Escribir "ESTE SISTEMA TE INDICA QUE TAN CERCA ESTA DE LLENAR EL TANQUE DE CAPACIDAD MAXIMA DE 100L "
+	Escribir "CUANTO ES EL NIVEL INICIAL DEL TANQUE (LITROS)?"
+	Leer NI
+	NT = NI
+	Hacer
+		Escribir "DIGITE LOS LITROS BOMBEADOS EN ESTE CICLO "
+		Leer NING
+		NT = NT + NING
+		Escribir "NIVEL ACTUAL DEL AGUA: ", NT, " LITROS"
+		
+		
+	Hasta Que  NT >= 100
+
+	Escribir "¡TANQUE LLENO! Desconectando bomba"
+	Escribir "AGUA TOTAL ALCANZADA: ", NT, " LITROS"
+
+	
+FinAlgoritmo
