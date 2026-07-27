@@ -1,0 +1,79 @@
+Algoritmo procesador_notas_academicas
+Definir nota como real
+Definir total_estudiantes Como Entero
+Definir aprobados Como Entero
+Definir reprobados Como Entero
+Definir continuar Como Entero
+Definir porcentaje_aprobados Como Real
+Definir promedio_grupo Como Real
+
+suma_notas <- 0.0
+total_estudiantes <- 0
+aprobados <- 0
+Escribir "registro de calificaciones"
+Hacer
+Escribir "ingrese la calificacion final  con un rango de 1.0 a 5.0"
+Leer  nota
+si nota < 0.0 y nota > 5.0 Entonces
+Escribir "error al ingresar la nota vuelva a intentarlo"
+SiNo
+total_estudiantes <- total_estudiantes +1
+suma_notas <- suma_notas + nota
+si nota >= 3.0 Entonces
+aprobados <- aprobados + 1
+SiNo
+reprobados <- reprobados + 1
+FinSi
+FinSi
+Escribir "¿desea ingresar otra nota de un estudiante? (1=si, 0=no)"
+leer continuar
+    Hasta Que continuar = 0
+si total_estudiantes > 0 Entonces
+porcentaje_aprobados <- (aprobados/total_estudiantes)* 100
+promedio_grupo <- suma_notas /total_estudiantes
+FinSi
+Escribir "resumen final del grupo"
+Escribir "total estudiantes evaluados",total_estudiantes
+Escribir "estudiantes aprobados", aprobados
+Escribir "estudiantes reprobados",reprobados
+Escribir "porcentaje de estudiantes aprobados",porcentaje_aprobadodos
+escribir "nota del promedio del grupo",promedio_grupoAlgoritmo procesador_notas_academicas
+Definir nota como real
+Definir total_estudiantes Como Entero
+Definir aprobados Como Entero
+Definir reprobados Como Entero
+Definir continuar Como Entero
+Definir porcentaje_aprobados Como Real
+Definir promedio_grupo Como Real
+
+suma_notas <- 0.0
+total_estudiantes <- 0
+aprobados <- 0
+Escribir "registro de calificaciones"
+Hacer
+Escribir "ingrese la calificacion final  con un rango de 1.0 a 5.0"
+Leer  nota
+si nota < 0.0 y nota > 5.0 Entonces
+Escribir "error al ingresar la nota vuelva a intentarlo"
+SiNo
+total_estudiantes <- total_estudiantes +1
+suma_notas <- suma_notas + nota
+si nota >= 3.0 Entonces
+aprobados <- aprobados + 1
+SiNo
+reprobados <- reprobados + 1
+FinSi
+FinSi
+Escribir "¿desea ingresar otra nota de un estudiante? (1=si, 0=no)"
+leer continuar
+    Hasta Que continuar = 0
+si total_estudiantes > 0 Entonces
+porcentaje_aprobados <- (aprobados/total_estudiantes)* 100
+promedio_grupo <- suma_notas /total_estudiantes
+FinSi
+Escribir "resumen final del grupo"
+Escribir "total estudiantes evaluados",total_estudiantes
+Escribir "estudiantes aprobados", aprobados
+Escribir "estudiantes reprobados",reprobados
+Escribir "porcentaje de estudiantes aprobados",porcentaje_aprobadodos
+escribir "nota del promedio del grupo",promedio_grupo
