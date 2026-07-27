@@ -1,0 +1,32 @@
+Algoritmo  Gestión_de_bases_de_datos_operativas 
+
+	Definir STOCK, RETIRO Como Entero
+	Escribir "HOLA!"
+	Escribir "DIGITE EL STOCK DISPONIBLE"
+	Escribir "EL SISTEMA FINALIZARA CUANDO RETIRES TODO EL STOCK O RETIRES 0"
+	Leer STOCK
+	
+	
+	
+	
+		Mientras STOCK > 0 Hacer
+			
+			Escribir "CUANTO DESEA RETIRAR?"
+			Leer RETIRO
+			SI RETIRO > STOCK Entonces
+				Escribir "STOCK INSUFICIENTE"
+				Escribir "TE FALTA ", RETIRO - STOCK
+			SiNo
+				STOCK= STOCK - RETIRO
+			FinSi
+			Escribir "STOCK DISPONIBLE: ", STOCK
+			
+			si (Retiro = 0)
+				Stock = 0
+			FinSi
+			
+			
+		FinMientras
+	
+	Escribir "HASTA LUEGO"
+FinAlgoritmo
