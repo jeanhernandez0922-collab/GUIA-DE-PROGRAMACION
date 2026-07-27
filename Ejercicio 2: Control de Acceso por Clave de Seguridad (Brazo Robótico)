@@ -1,0 +1,25 @@
+Algoritmo brazo_robotico
+Definir clave_correcta Como Entero
+Definir  clave_ingresada Como Entero
+Definir contador_intentos Como Entero
+clave_correcta <- 3006
+contador_intentos <- 0
+
+Hacer
+Escribir "ingrese la clave de acceso que contiene 4 dijitos"
+leer clave_ingresada
+intentos <- intentos + 1
+si clave_ingresada= clave_correcta Entonces
+Escribir "acceso ya consedido señito,inicia movimiento del brazo robotico"
+SiNo
+si intentos < 3 Entonces
+Escribir "intentelo nuevamente que no es"
+SiNo
+Escribir "alertaaaaaaaaaaaaaaaa!!!!contraseña incorrectaa limite alcanzado,sistema bloqueado :b"
+FinSi
+
+FinSi
+Hasta Que clave_ingresada = clave_correcta o intentos = 3
+
+
+finAlgoritmo
