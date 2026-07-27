@@ -1,0 +1,34 @@
+Algoritmo ACT6
+	
+	DEFINIR PESS Como real
+	definir continuar como entero
+	definir ttlprocesadas, ACEP, RECH Como Entero
+	
+	ACEP=0
+	RECH=0
+	Repetir
+		Escribir "DIJITE EL PESO EN GRAMOS"
+		LEER PESS
+	
+	SI PESS >= 45 Y PESS <= 55 Entonces
+		Escribir "ACEPTADA"
+		ACEP = ACEP + 1
+	SINO 
+		Escribir "RECHAZADA"
+		RECH = RECH + 1
+	FinSi
+	
+	ttlprocesadas= ttlprocesadas + 1
+	Escribir "desea procesar una nueva pieza (1 = si, 0 = no) "
+	leer continuar
+Hasta Que continuar = 0
+mientras continuar = 1
+FinMientras
+ 
+	Escribir "el total de las aceptadas = ", ACEP
+	Escribir "el total e las rechazadas = ", RECH
+	Escribir "total de piezas procesadas = " ACEP+RECH
+
+
+	
+FinAlgoritmo
